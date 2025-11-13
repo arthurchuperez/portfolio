@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station F - Reproduction Fictif - Arthur Perez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        .project-detail {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .project-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-section h2 {
+            color: #8a2be2;
+            border-bottom: 3px solid #ff8c00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .project-section h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .info-table th,
+        .info-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .info-table th {
+            background-color: #8a2be2;
+            color: white;
+        }
+        
+        .info-table tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        
+        .objectives-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .objectives-list li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        
+        .objectives-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff8c00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .team-member {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .difficulty-table {
+            font-size: 0.95em;
+        }
+        
+        .difficulty-table td:first-child {
+            font-weight: bold;
+            color: #8a2be2;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #ff8c00, #8a2be2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+        }
+        
+        .highlight-box {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arthur Perez</h1>
+        <p>Étudiant en BTS SIO - Spécialité SISR</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="competences.html" class="nav-btn"><i class="fas fa-tasks"></i> Compétences</a></li>
+                <li><a href="projets.html" class="nav-btn active"><i class="fas fa-laptop-code"></i> Projets</a></li>
+                <li><a href="veilletechnologique.html" class="nav-btn"><i class="fas fa-newspaper"></i> Veille</a></li>
+                <li><a href="contact.html" class="nav-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="project-detail">
+        <a href="projets.html" class="back-button"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+        
+        <div class="project-header">
+            <h1><i class="fas fa-building"></i> Station F Paris</h1>
+            <p>Modernisation Fictive de l'Infrastructure Réseau</p>
+        </div>
+
+        <!-- Résumé Exécutif -->
+        <div class="project-section">
+            <h2><i class="fas fa-chart-line"></i> Résumé Exécutif</h2>
+            <p>L'équipe d'ingénierie réseau de <strong>Station F – Paris</strong>, composée de 12 spécialistes en systèmes et réseaux, accompagne les <strong>startups hébergées sur le campus</strong> dans la conception et la modernisation de leurs infrastructures informatiques.</p>
+            <p>Notre mission s'inscrit dans un contexte d'innovation et de performance, où la <strong>stabilité du réseau</strong>, la <strong>sécurité des données</strong>, et la <strong>connectivité sans faille</strong> sont des priorités stratégiques pour les jeunes entreprises du site.</p>
+        </div>
+
+        <!-- Informations de l'Entreprise -->
+        <div class="project-section">
+            <h2><i class="fas fa-info-circle"></i> Informations de l'Entreprise</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Nom de l'entreprise</th>
+                    <td>STATION F</td>
+                </tr>
+                <tr>
+                    <th>Industrie</th>
+                    <td>IT & Networking</td>
+                </tr>
+                <tr>
+                    <th>Administrateurs Réseaux</th>
+                    <td>12 employés</td>
+                </tr>
+                <tr>
+                    <th>Taille de l'entreprise</th>
+                    <td>Plus de 1000 employés (clients, startups & employés)</td>
+                </tr>
+                <tr>
+                    <th>Localisation</th>
+                    <td>Paris, France</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Équipe d'Administrateurs -->
+        <div class="project-section">
+            <h2><i class="fas fa-users"></i> Équipe d'Administrateurs Réseaux</h2>
+            <p><strong>Chef d'équipe réseau:</strong> Clément Remoissenets</p>
+            <div class="team-grid">
+                <div class="team-member">Thomas</div>
+                <div class="team-member">Evan</div>
+                <div class="team-member">Arthur</div>
+                <div class="team-member">Kanikathir</div>
+                <div class="team-member">Assa</div>
+                <div class="team-member">Diego</div>
+                <div class="team-member">Kinsy</div>
+                <div class="team-member">Anas</div>
+                <div class="team-member">Abdel</div>
+                <div class="team-member">Eldelmira</div>
+            </div>
+        </div>
+
+        <!-- Composants et Services -->
+        <div class="project-section">
+            <h2><i class="fas fa-cogs"></i> Composants et Services à Configurer</h2>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Rôle</th>
+                        <th>Détail Technique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Proxmox VE</strong></td>
+                        <td>Hyperviseur</td>
+                        <td>Création et gestion des machines virtuelles (VM), configuration des bridges réseau, gestion des VLAN.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stormshield SN</strong></td>
+                        <td>Pare-feu</td>
+                        <td>Routage inter-VLAN, NAT sortant, filtrage des flux, supervision et VPN sécurisé pour accès distant.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ADDS (Windows Server 2025)</strong></td>
+                        <td>Contrôleur de domaine</td>
+                        <td>Gestion centralisée des comptes utilisateurs, attribution d'adresses IP (DHCP), résolution DNS interne, politiques de sécurité de domaine.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FileServer (Windows Server 2025)</strong></td>
+                        <td>Serveur de fichiers (Partage SMB)</td>
+                        <td>Hébergement des fichiers partagés, gestion des droits NTFS selon les groupes Active Directory.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Switchs Cisco</strong></td>
+                        <td>Commutation VLAN</td>
+                        <td>Création et affectation des VLAN 10/20/30, configuration des ports trunk vers le Stormshield et les serveurs Proxmox.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wi-Fi (Borne Azure)</strong></td>
+                        <td>Accès sans fil mobile</td>
+                        <td>SSID interne isolé, VLAN Wi-Fi dédié, authentification WPA2/Azure, couverture réseau pour les utilisateurs mobiles.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Objectifs Principaux -->
+        <div class="project-section">
+            <h2><i class="fas fa-bullseye"></i> Objectifs Principaux / Requêtes</h2>
+            <ul class="objectives-list">
+                <li>Centraliser les fichiers sur un serveur de fichiers sécurisé</li>
+                <li>Gérer les utilisateurs et les droits via Active Directory (ADDS)</li>
+                <li>Distribuer automatiquement les adresses IP via DHCP</li>
+                <li>Fournir une résolution de noms interne (DNS)</li>
+                <li>Sécuriser l'accès Internet grâce à un pare-feu Stormshield</li>
+                <li>Permettre une connexion Wi-Fi fiable et sécurisée pour les utilisateurs mobiles</li>
+                <li>Créer des VLANs de 12 startups et les autres acteurs de l'entreprise (office, management, etc.)</li>
+                <li>Mise en place des mesures de sécurité à l'infrastructure</li>
+            </ul>
+        </div>
+
+        <!-- Contraintes Techniques -->
+        <div class="project-section">
+            <h2><i class="fas fa-wrench"></i> Contraintes Techniques</h2>
+            <div class="highlight-box">
+                <h3>Infrastructure</h3>
+                <ul>
+                    <li><strong>Virtualisation:</strong> Proxmox VE</li>
+                    <li><strong>Systèmes d'exploitation:</strong> Windows Server 2025, Windows 11 (client)</li>
+                    <li><strong>Segmentation réseau:</strong> VLAN distincts pour management, serveurs, invités, Wi-Fi, DMZ</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Sécurité</h3>
+                <ul>
+                    <li>Droits NTFS par groupes AD</li>
+                    <li>Authentification SSH limitée aux IP du VLAN Management</li>
+                    <li>Pare-feu Stormshield configuré en filtrage par zones</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Sauvegardes & Documentation</h3>
+                <ul>
+                    <li>Snapshots automatiques (Proxmox) + sauvegarde partagée sur SRV-FILES</li>
+                    <li>Documentation: plan IP, VLAN, rôles des VM, configurations Stormshield</li>
+                    <li>Outils réseau: MobaXterm, PuTTY, RDP, SSH</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LOT 1: Infrastructure Réseau -->
+        <div class="project-section">
+            <h2><i class="fas fa-network-wired"></i> LOT 1 - Infrastructure Réseau</h2>
+            <p>Mettre en place une infrastructure réseau sécurisée, segmentée et performante, conforme aux bonnes pratiques d'administration et de cybersécurité.</p>
+            
+            <h3>Objectifs du LOT 1</h3>
+            <ul>
+                <li>Séparation logique des réseaux via des VLANs</li>
+                <li>Routage inter-VLAN et NAT vers Internet</li>
+                <li>Définition du plan d'adressage IP (logique et physique)</li>
+                <li>Sécurisation des flux grâce à des règles de filtrage réseau</li>
+                <li>Validation de la connectivité entre les postes, serveurs et Internet</li>
+            </ul>
+            
+            <h3>Composants concernés</h3>
+            <ul>
+                <li>Switch Core (L3) assurant le routage inter-VLAN</li>
+                <li>Deux switches d'accès (L2)</li>
+                <li>Liens trunk et ports d'accès</li>
+                <li>Plan d'adressage VLAN</li>
+                <li>Configuration des règles de sécurité associées</li>
+            </ul>
+        </div>
+
+        <!-- LOT 2: Virtualisation et Services -->
+        <div class="project-section">
+            <h2><i class="fas fa-server"></i> LOT 2 - Virtualisation et Services</h2>
+            
+            <h3>Configuration Proxmox</h3>
+            <p>Création de comptes utilisateurs pour chaque administrateur avec les identifiants sécurisés:</p>
+            <ul>
+                <li><strong>Login:</strong> Nom de l'administrateur</li>
+                <li><strong>Mot de passe Proxmox:</strong> Sio.2026</li>
+                <li><strong>Mot de passe SSH réseau:</strong> paris.2026</li>
+            </ul>
+            
+            <h3>Configuration DHCP</h3>
+            <p>Distribution automatique des adresses IP via un serveur DHCP avec création d'étendues pour:</p>
+            <ul>
+                <li>VLAN Office</li>
+                <li>Chaque startup (utilisation des 10 premières adresses de chaque réseau)</li>
+            </ul>
+            
+            <h3>Borne Wi-Fi (Aruba Controller)</h3>
+            <p>Configuration d'un contrôleur virtuel Aruba (172.16.0.251) pour gérer plusieurs réseaux sans fil:</p>
+            <ul>
+                <li><strong>paris_invite:</strong> Réseau invité</li>
+                <li><strong>paris_mana:</strong> Réseau principal interne</li>
+                <li><strong>paris_office:</strong> Réseau de bureau</li>
+            </ul>
+        </div>
+
+        <!-- LOT 3: Active Directory -->
+        <div class="project-section">
+            <h2><i class="fas fa-users-cog"></i> LOT 3 - Active Directory et Serveur de Fichiers</h2>
+            
+            <h3>1. Infrastructure Active Directory</h3>
+            <p>Création de deux unités d'organisation (UO):</p>
+            <ul>
+                <li><strong>Office</strong>
+                    <ul>
+                        <li>Administrateurs (comptes 1001 à 1012)</li>
+                        <li>Ressources Humaines (comptes 10001 à 10002)</li>
+                    </ul>
+                </li>
+                <li><strong>Startup</strong>
+                    <ul>
+                        <li>12 startups (Startup1 à Startup12)</li>
+                        <li>Utilisateurs numérotés (ex: 200101 pour Startup1, 201201 pour Startup12)</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>2. Configuration du Serveur de Fichiers</h3>
+            <ul>
+                <li>Renommage et intégration au domaine "paris.stationf"</li>
+                <li>Création de dossiers pour les profils itinérants</li>
+                <li>Configuration des droits NTFS pour la sécurité et la gestion des accès</li>
+            </ul>
+        </div>
+
+        <!-- Difficultés Rencontrées -->
+        <div class="project-section">
+            <h2><i class="fas fa-exclamation-triangle"></i> Difficultés Rencontrées et Solutions</h2>
+            <table class="info-table difficulty-table">
+                <thead>
+                    <tr>
+                        <th>Difficulté</th>
+                        <th>Description</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Problèmes de routage inter-VLAN</td>
+                        <td>Les machines de différents VLAN ne pouvaient pas communiquer</td>
+                        <td>Configuration du routage sur Stormshield, vérification des passerelles et tests avec ping/tracert</td>
+                    </tr>
+                    <tr>
+                        <td>Mauvaise attribution DHCP</td>
+                        <td>Clients ne recevaient pas d'adresse IP correcte</td>
+                        <td>Vérification du rôle DHCP sur AD/DHCP/DNS, définition des portées et activation du relais DHCP</td>
+                    </tr>
+                    <tr>
+                        <td>Résolution DNS incorrecte</td>
+                        <td>Noms d'hôtes internes non résolus</td>
+                        <td>Configuration DNS interne sur serveur AD, ajout des enregistrements A et PTR</td>
+                    </tr>
+                    <tr>
+                        <td>Accès SSH non fonctionnel</td>
+                        <td>Impossible de se connecter en SSH aux switchs</td>
+                        <td>Activation SSH uniquement sur IP de gestion dans VLAN Management</td>
+                    </tr>
+                    <tr>
+                        <td>Configuration Proxmox (VMBR)</td>
+                        <td>VM sans accès réseau ou IP</td>
+                        <td>Reconfiguration des bridges avec tests de connectivité</td>
+                    </tr>
+                    <tr>
+                        <td>Pare-feu trop restrictif</td>
+                        <td>Communications internes bloquées</td>
+                        <td>Révision des règles Stormshield, autorisation des flux nécessaires</td>
+                    </tr>
+                    <tr>
+                        <td>Problème NAT/Internet</td>
+                        <td>Postes clients sans accès Internet</td>
+                        <td>Activation NAT sortant sur Stormshield, vérification routes et DNS externe</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi instable</td>
+                        <td>Déconnexions fréquentes</td>
+                        <td>Vérification SSID, VLAN tagging sur switch, WPA2 fort et canal radio fixe</td>
+                    </tr>
+                    <tr>
+                        <td>Déconnexion Active Directory</td>
+                        <td>Changement d'IP et suppression accidentelle de l'AD</td>
+                        <td>Reconfiguration complète avec assistance, amélioration de la compréhension du réseau</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sécurité et Bonnes Pratiques -->
+        <div class="project-section">
+            <h2><i class="fas fa-shield-alt"></i> Sécurité et Bonnes Pratiques</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li><strong>Pare-feu Stormshield:</strong> Routage inter-VLAN, NAT, filtrage par zones, journalisation</li>
+                    <li><strong>Active Directory:</strong> Gestion centralisée des comptes, politiques de mot de passe</li>
+                    <li><strong>Partages:</strong> Droits NTFS selon les groupes AD</li>
+                    <li><strong>Wi-Fi:</strong> SSID isolé, VLAN dédié, WPA2/Azure</li>
+                    <li><strong>Switchs:</strong> SSH autorisé uniquement depuis VLAN Management, Telnet désactivé</li>
+                    <li><strong>Sauvegardes:</strong> Snapshots Proxmox automatiques, sauvegarde planifiée sur SRV-FILES</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="projets.html" class="back-button"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Arthur Perez - BTS SIO SISR</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:contact@arthurperez.fr" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
