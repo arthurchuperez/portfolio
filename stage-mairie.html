@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage - Infrastructure Annexe Mairie - Arthur Perez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        .project-detail {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .project-header h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .project-header .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .project-tags-header {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: linear-gradient(90deg, #ff8c00, #8a2be2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .step-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid;
+            border-image: linear-gradient(90deg, #ff8c00, #8a2be2) 1;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8c00, #8a2be2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-title {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0;
+        }
+
+        .step-content {
+            margin-top: 20px;
+        }
+
+        .step-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .photo-placeholder {
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #999;
+        }
+
+        .photo-placeholder i {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        .step-list {
+            background-color: #f9f9f9;
+            border-left: 4px solid #8a2be2;
+            padding: 20px 20px 20px 30px;
+            margin: 20px 0;
+        }
+
+        .step-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff8c00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h4 {
+            margin-top: 0;
+            color: #ff8c00;
+            display: flex;
+            align-items: center;
+        }
+
+        .highlight-box h4 i {
+            margin-right: 10px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #8a2be2;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ff8c00;
+            transform: translateX(-5px);
+        }
+
+        .back-link i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arthur Perez</h1>
+        <p>Étudiant en BTS SIO - Spécialité SISR</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="competences.html" class="nav-btn"><i class="fas fa-tasks"></i> Compétences</a></li>
+                <li><a href="projets.html" class="nav-btn active"><i class="fas fa-laptop-code"></i> Projets</a></li>
+                <li><a href="veilletechnologique.html" class="nav-btn"><i class="fas fa-newspaper"></i> Veille</a></li>
+                <li><a href="contact.html" class="nav-btn"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <a href="projets.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Retour aux projets
+        </a>
+
+        <div class="project-header">
+            <h2>Stage - Infrastructure Annexe Mairie</h2>
+            <p class="subtitle">Déploiement complet de l'infrastructure réseau et informatique</p>
+            <div class="project-tags-header">
+                <span class="tag">Switch</span>
+                <span class="tag">WiFi</span>
+                <span class="tag">Brassage</span>
+                <span class="tag">Installation</span>
+                <span class="tag">Support</span>
+                <span class="tag">VLAN</span>
+                <span class="tag">DHCP</span>
+            </div>
+        </div>
+
+        <!-- Étape 1 -->
+        <div class="step-container">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Configuration initiale</h3>
+            </div>
+            <div class="step-content">
+                <p class="step-description">
+                    Préparation et configuration de l'infrastructure réseau avant le déploiement sur site. Cette phase comprend la planification de l'architecture réseau, la configuration des équipements et la validation des paramètres.
+                </p>
+                <div class="photo-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Photos de la configuration initiale</p>
+                </div>
+                <div class="step-list">
+                    <ul>
+                        <li>Analyse des besoins de l'annexe de la mairie</li>
+                        <li>Configuration du switch réseau avec les VLANs appropriés</li>
+                        <li>Préparation des paramètres DHCP et des règles de sécurité</li>
+                        <li>Tests préliminaires des équipements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="step-container">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Installation du switch</h3>
+            </div>
+            <div class="step-content">
+                <p class="step-description">
+                    Installation physique du switch dans la baie de brassage après le raccordement de la fibre optique. Vérification de la connectivité et du fonctionnement avec le redondeur.
+                </p>
+                <div class="photo-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Photos de l'installation du switch et du redondeur</p>
+                </div>
+                <div class="step-list">
+                    <ul>
+                        <li>Brassage de la fibre optique</li>
+                        <li>Pose et fixation du switch dans la baie</li>
+                        <li>Connexion au redondeur pour assurer la redondance réseau</li>
+                        <li>Tests de connectivité et vérification du bon fonctionnement</li>
+                        <li>Validation de la liaison avec le réseau principal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="step-container">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Brassage réseau</h3>
+            </div>
+            <div class="step-content">
+                <p class="step-description">
+                    Organisation du câblage réseau en reliant chaque port du switch aux bandeaux muraux correspondants. Une attention particulière a été portée à l'esthétique et à la facilité de maintenance future.
+                </p>
+                <div class="photo-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Photos du brassage des câbles réseau</p>
+                </div>
+                <div class="step-list">
+                    <ul>
+                        <li>Repérage et identification de tous les ports muraux</li>
+                        <li>Câblage structuré des ports switch vers les bandeaux</li>
+                        <li>Organisation soignée des câbles pour une meilleure lisibilité</li>
+                        <li>Documentation de la correspondance port/localisation</li>
+                        <li>Étiquetage de chaque connexion avec sa fonction (PC, téléphone, imprimante, etc.)</li>
+                    </ul>
+                </div>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-info-circle"></i> Mappage des ports</h4>
+                    <p>Chaque port a été documenté avec précision :</p>
+                    <ul>
+                        <li><strong>Ports 1-10 :</strong> Postes de travail (VLAN PC)</li>
+                        <li><strong>Ports 11-15 :</strong> Téléphones IP (VLAN Voix)</li>
+                        <li><strong>Port 16 :</strong> Imprimante personnelle (VLAN Imprimante)</li>
+                        <li><strong>Ports 17-20 :</strong> Bornes WiFi et équipements réseau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="step-container">
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Installation des postes de travail</h3>
+            </div>
+            <div class="step-content">
+                <p class="step-description">
+                    Mise en place des équipements informatiques pour chaque bureau : installation des écrans, des PC fixes, et câblage propre utilisant les goulottes des tables pour éviter tout désagrément visuel.
+                </p>
+                <div class="photo-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Photos de l'installation des bureaux</p>
+                </div>
+                <div class="step-list">
+                    <ul>
+                        <li>Installation des écrans et PC fixes sur chaque poste</li>
+                        <li>Passage des câbles par les goulottes des tables</li>
+                        <li>Connexion réseau et alimentation électrique</li>
+                        <li>Organisation ergonomique des postes de travail</li>
+                        <li>Configuration initiale des ordinateurs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Étape 5 -->
+        <div class="step-container">
+            <div class="step-header">
+                <div class="step-number">5</div>
+                <h3 class="step-title">Vérification et résolution de problèmes</h3>
+            </div>
+            <div class="step-content">
+                <p class="step-description">
+                    Phase de tests et de résolution des problèmes rencontrés. Plusieurs ajustements ont été nécessaires pour assurer le bon fonctionnement de tous les équipements.
+                </p>
+                <div class="photo-placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Photos des tests et vérifications</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Problème : Téléphones IP non fonctionnels</h4>
+                    <p><strong>Diagnostic :</strong> Les téléphones IP ne parvenaient pas à obtenir une configuration réseau correcte lorsque connectés en série avec les PC.</p>
+                    <p><strong>Solution :</strong> Configuration d'une règle DHCP spécifique permettant au switch de gérer le double VLAN :</p>
+                    <ul>
+                        <li>Le téléphone reçoit une adresse IP du VLAN Voix</li>
+                        <li>Le PC connecté au téléphone reçoit une adresse du VLAN PC</li>
+                        <li>Mise en place du Voice VLAN sur les ports concernés</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4><i class="fas fa-plus-circle"></i> Besoin supplémentaire : Imprimante personnelle</h4>
+                    <p><strong>Situation :</strong> Un utilisateur a apporté son imprimante personnelle nécessitant une connectivité réseau.</p>
+                    <p><strong>Solution :</strong> Ajout d'un port dédié avec le VLAN Imprimante pour isoler le trafic d'impression et assurer la sécurité du réseau.</p>
+                </div>
+
+                <div class="step-list">
+                    <h4>Tests effectués :</h4>
+                    <ul>
+                        <li>Vérification de la connectivité réseau de tous les postes</li>
+                        <li>Tests de fonctionnement des téléphones IP</li>
+                        <li>Validation de l'accès à l'imprimante</li>
+                        <li>Tests de la borne WiFi et de la couverture réseau</li>
+                        <li>Vérification de l'accès aux ressources partagées</li>
+                        <li>Tests de performance du réseau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="projets.html" class="btn">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Arthur Perez - Portfolio BTS SIO SISR</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:contact@arthurperez.fr" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
