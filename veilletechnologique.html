@@ -1,111 +1,139 @@
-<section id="veille">
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Authentification sans mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="veille-article">
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="veille.html" class="nav-btn active"><i class="fas fa-search"></i> Veille</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h3>Rapport de Veille</h3>
-        <p class="veille-date">
-            Analyse des technologies d’authentification sans mot de passe – 2025 à aujourd’hui
-        </p>
+    <section id="veille">
+        <div class="veille-article">
 
-        <div class="veille-section">
-            <h4>Authentification sans mot de passe (Passkeys, MFA avancé, clés cryptographiques)</h4>
+            <h3>Rapport de Veille</h3>
+            <p class="veille-date">
+                Analyse des technologies d'authentification sans mot de passe – 2025 à aujourd'hui
+            </p>
 
-            <table class="veille-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Technologie / Acteur</th>
-                        <th>Information</th>
-                        <th>Impact</th>
-                        <th>Source</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2025</td>
-                        <td>FIDO Alliance</td>
-                        <td>Standard FIDO2/WebAuthn basé sur cryptographie asymétrique</td>
-                        <td>Protection contre phishing et vol de mots de passe</td>
-                        <td><a href="https://fidoalliance.org/specifications-overview/" target="_blank">Lien</a></td>
-                    </tr>
+            <div class="veille-section">
+                <h4>Authentification sans mot de passe (Passkeys, MFA avancé, clés cryptographiques)</h4>
 
-                    <tr>
-                        <td>2025</td>
-                        <td>Google</td>
-                        <td>Déploiement des Passkeys avec biométrie ou PIN local</td>
-                        <td>Connexion plus simple et adoption massive</td>
-                        <td><a href="https://developers.google.com/identity/passkeys" target="_blank">Lien</a></td>
-                    </tr>
+                <table class="veille-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Technologie / Acteur</th>
+                            <th>Information</th>
+                            <th>Impact</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025</td>
+                            <td>FIDO Alliance</td>
+                            <td>Standard FIDO2/WebAuthn basé sur cryptographie asymétrique</td>
+                            <td>Protection contre phishing et vol de mots de passe</td>
+                            <td><a href="https://fidoalliance.org/specifications-overview/" target="_blank">Lien</a></td>
+                        </tr>
 
-                    <tr>
-                        <td>2025</td>
-                        <td>Okta</td>
-                        <td>Transition vers un futur sans mot de passe</td>
-                        <td>Réduction des compromissions liées aux mots de passe</td>
-                        <td><a href="https://www.okta.com/resources/whitepaper-passwordless-future/" target="_blank">Lien</a></td>
-                    </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>Google</td>
+                            <td>Déploiement des Passkeys avec biométrie ou PIN local</td>
+                            <td>Connexion plus simple et adoption massive</td>
+                            <td><a href="https://developers.google.com/identity/passkeys" target="_blank">Lien</a></td>
+                        </tr>
 
-                    <tr>
-                        <td>2025</td>
-                        <td>CNIL</td>
-                        <td>Recommandation d’authentification multi-facteurs forte</td>
-                        <td>Encadrement légal et bonnes pratiques</td>
-                        <td><a href="https://www.cnil.fr/fr/recommandation-mfa" target="_blank">Lien</a></td>
-                    </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>Okta</td>
+                            <td>Transition vers un futur sans mot de passe</td>
+                            <td>Réduction des compromissions liées aux mots de passe</td>
+                            <td><a href="https://www.okta.com/resources/whitepaper-passwordless-future/" target="_blank">Lien</a></td>
+                        </tr>
 
-                    <tr>
-                        <td>2025</td>
-                        <td>ENISA</td>
-                        <td>Guide européen sur la gestion des risques et authentification forte</td>
-                        <td>Promotion des solutions basées sur clés cryptographiques</td>
-                        <td><a href="https://www.enisa.europa.eu" target="_blank">Lien</a></td>
-                    </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>CNIL</td>
+                            <td>Recommandation d'authentification multi-facteurs forte</td>
+                            <td>Encadrement légal et bonnes pratiques</td>
+                            <td><a href="https://www.cnil.fr/fr/recommandation-mfa" target="_blank">Lien</a></td>
+                        </tr>
 
-                    <tr>
-                        <td>2026</td>
-                        <td>Yubico</td>
-                        <td>Nouvelle clé matérielle YubiKey certifiée haute sécurité</td>
-                        <td>Renforcement du MFA matériel</td>
-                        <td><a href="https://www.yubico.com" target="_blank">Lien</a></td>
-                    </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>ENISA</td>
+                            <td>Guide européen sur la gestion des risques et authentification forte</td>
+                            <td>Promotion des solutions basées sur clés cryptographiques</td>
+                            <td><a href="https://www.enisa.europa.eu" target="_blank">Lien</a></td>
+                        </tr>
 
-                    <div class="veille-section">
-    <h4>Méthodologie de veille</h4>
+                        <tr>
+                            <td>2026</td>
+                            <td>Yubico</td>
+                            <td>Nouvelle clé matérielle YubiKey certifiée haute sécurité</td>
+                            <td>Renforcement du MFA matériel</td>
+                            <td><a href="https://www.yubico.com" target="_blank">Lien</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <p>
-        Pour réaliser cette veille technologique sur l’authentification sans mot de passe, j’ai utilisé deux méthodes complémentaires :
-    </p>
+            <div class="veille-section">
+                <h4>Méthodologie de veille</h4>
 
-    <ul>
-        <li>
-            <strong>Feedly :</strong> agrégateur de flux RSS permettant de suivre l’actualité en cybersécurité et en gestion des identités. 
-            Il me permet de centraliser les articles récents sur les passkeys, le MFA avancé et les nouvelles solutions d’authentification.
-        </li>
+                <p>
+                    Pour réaliser cette veille technologique sur l'authentification sans mot de passe, j'ai utilisé deux méthodes complémentaires :
+                </p>
 
-        <li>
-            <strong>Newsletters spécialisées :</strong> je reçois régulièrement par email des newsletters provenant de sites et d’acteurs du domaine 
-            (SecurityBoulevard, Yubico, éditeurs de solutions de sécurité, etc.), ce qui me permet de rester informé des dernières innovations et annonces.
-        </li>
-    </ul>
+                <ul>
+                    <li>
+                        <strong>Feedly :</strong> agrégateur de flux RSS permettant de suivre l'actualité en cybersécurité et en gestion des identités. 
+                        Il me permet de centraliser les articles récents sur les passkeys, le MFA avancé et les nouvelles solutions d'authentification.
+                    </li>
 
-    <p>
-        Une capture d’écran de Feedly est présentée ci-dessous pour illustrer l’organisation de ma veille.
-    </p>
+                    <li>
+                        <strong>Newsletters spécialisées :</strong> je reçois régulièrement par email des newsletters provenant de sites et d'acteurs du domaine 
+                        (SecurityBoulevard, Yubico, éditeurs de solutions de sécurité, etc.), ce qui me permet de rester informé des dernières innovations et annonces.
+                    </li>
+                </ul>
 
-    <!-- Image Feedly -->
-    <div class="veille-image">
-        <img src="images/feedly.png" alt="Capture Feedly veille technologique">
-    </div>
-</div>
+                <p>
+                    Une capture d'écran de Feedly est présentée ci-dessous pour illustrer l'organisation de ma veille.
+                </p>
 
+                <!-- Image Feedly -->
+                <div class="veille-image">
+                    <img src="images/feedly.png" alt="Capture Feedly veille technologique" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
 
-                </tbody>
-            </table>
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
-
+</body>
+</html>
