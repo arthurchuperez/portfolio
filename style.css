@@ -623,3 +623,187 @@ textarea {
 .veille-table a:hover {
     text-decoration: underline;
 }
+
+/* Page des missions */
+#missions {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mission-intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.mission-intro h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff8c00, #8a2be2);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.mission-intro .intro {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 30px auto 0;
+    line-height: 1.8;
+}
+
+.mission-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.mission-header {
+    background: linear-gradient(135deg, #ff8c00, #8a2be2);
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mission-icon {
+    font-size: 3em;
+    opacity: 0.9;
+}
+
+.mission-header h3 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.mission-content {
+    padding: 30px;
+}
+
+.mission-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.mission-details h4 {
+    color: #8a2be2;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.mission-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-details li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.mission-details li:before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #ff8c00;
+    font-size: 0.8em;
+}
+
+.mission-details strong {
+    color: #333;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff8c00, #8a2be2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+}
+
+.mission-conclusion {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.mission-conclusion h3 {
+    color: #8a2be2;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.mission-conclusion p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive missions */
+@media (max-width: 768px) {
+    .mission-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mission-icon {
+        font-size: 2.5em;
+    }
+    
+    .mission-header h3 {
+        font-size: 1.5em;
+    }
+    
+    .mission-content {
+        padding: 20px;
+    }
+    
+    .skills-tags {
+        justify-content: center;
+    }
+}
