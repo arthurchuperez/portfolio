@@ -647,7 +647,7 @@ textarea {
 }
 
 .entreprise-header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #ff8c00 0%, #8a2be2 100%);
     color: white;
     padding: 50px 40px;
     display: flex;
@@ -711,7 +711,7 @@ textarea {
 }
 
 .entreprise-content h4 {
-    color: #1e3a8a;
+    color: #8a2be2;
     margin-top: 40px;
     margin-bottom: 25px;
     font-size: 1.7em;
@@ -729,11 +729,11 @@ textarea {
 
 .entreprise-content h4 i {
     font-size: 1em;
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    background: linear-gradient(135deg, #ff8c00, #8a2be2);
     color: white;
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
 }
 
 .entreprise-description p,
@@ -762,7 +762,7 @@ textarea {
 
 .entreprise-services li:hover {
     padding-left: 40px;
-    border-left-color: #3b82f6;
+    border-left-color: #ff8c00;
     background-color: #f1f5f9;
     margin-left: -10px;
     padding-right: 10px;
@@ -773,7 +773,7 @@ textarea {
     content: '▶';
     position: absolute;
     left: 10px;
-    color: #3b82f6;
+    color: #ff8c00;
     font-size: 0.9em;
     transition: all 0.3s ease;
 }
@@ -784,7 +784,7 @@ textarea {
 }
 
 .entreprise-services strong {
-    color: #1e3a8a;
+    color: #8a2be2;
     font-weight: 600;
 }
 
@@ -813,15 +813,15 @@ textarea {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    background: linear-gradient(90deg, #ff8c00, #8a2be2);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
 
 .mission-service-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
-    border-color: #3b82f6;
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.2);
+    border-color: #8a2be2;
 }
 
 .mission-service-item:hover::before {
@@ -830,19 +830,19 @@ textarea {
 
 .mission-service-item i {
     font-size: 3em;
-    color: #3b82f6;
+    color: #8a2be2;
     margin-bottom: 20px;
     transition: all 0.4s ease;
 }
 
 .mission-service-item:hover i {
     transform: scale(1.15) rotateY(180deg);
-    color: #1e3a8a;
+    color: #ff8c00;
 }
 
 .mission-service-item h5 {
     margin: 0 0 12px 0;
-    color: #1e3a8a;
+    color: #8a2be2;
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -862,7 +862,7 @@ textarea {
 }
 
 .chiffre-item {
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #ff8c00 0%, #8a2be2 100%);
     color: white;
     padding: 35px 25px;
     border-radius: 15px;
@@ -870,7 +870,7 @@ textarea {
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
-    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
 }
 
 .chiffre-item::before {
@@ -887,7 +887,7 @@ textarea {
 
 .chiffre-item:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.4);
 }
 
 .chiffre-item:hover::before {
@@ -921,7 +921,7 @@ textarea {
 }
 
 .section-divider h2 {
-    color: #1e3a8a;
+    color: #8a2be2;
     margin-bottom: 15px;
     font-size: 2em;
 }
@@ -944,7 +944,7 @@ textarea {
 
 .mission-note {
     background-color: #f8fafc;
-    border-left: 4px solid #3b82f6;
+    border-left: 4px solid #ff8c00;
     padding: 15px 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -952,7 +952,7 @@ textarea {
 }
 
 .mission-note i {
-    color: #3b82f6;
+    color: #ff8c00;
     margin-right: 8px;
 }
 
