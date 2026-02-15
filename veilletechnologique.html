@@ -1,105 +1,78 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille Technologique - Arthur Perez</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-</head>
-<body>
-    <header>
-        <h1>Arthur Perez</h1>
-        <p>Étudiant en BTS SIO - Spécialité SISR</p>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-btn"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="competences.html" class="nav-btn"><i class="fas fa-tasks"></i> Compétences</a></li>
-                <li><a href="projets.html" class="nav-btn"><i class="fas fa-laptop-code"></i> Projets</a></li>
-                <li><a href="veilletechnologique.html" class="nav-btn active"><i class="fas fa-newspaper"></i> Veille</a></li>
-                <li><a href="contact.html" class="nav-btn"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<section id="veille">
 
-    <section id="veille">
-        <h2>Veille Technologique</h2>
-        <p class="intro">Dans le cadre de mon BTS SIO, je réalise une veille technologique sur différents sujets liés à l'informatique et à la sécurité. Voici ma dernière analyse :</p>
-        
-        <div class="veille-article">
-            <h3>L'authentification sans mot de passe (Passkeys, MFA avancé)</h3>
-            <div class="veille-date">Mars 2025</div>
-            
-            <div class="veille-section">
-                <h4>Introduction</h4>
-                <p>L'authentification sans mot de passe devient une alternative de plus en plus adoptée pour renforcer la sécurité des comptes utilisateurs tout en améliorant l'expérience utilisateur. Cette approche permet de se passer des mots de passe, souvent vulnérables aux attaques (phishing, brute force, etc.), en les remplaçant par des méthodes plus sécurisées comme les Passkeys ou l'authentification multi-facteurs avancée (MFA).</p>
-            </div>
-            
-            <div class="veille-section">
-                <h4>1. Qu'est-ce que l'authentification sans mot de passe ?</h4>
-                <p>L'authentification sans mot de passe repose sur des méthodes qui ne nécessitent pas de saisir un mot de passe classique. Elle utilise des technologies comme :</p>
-                <ul>
-                    <li><strong>Les Passkeys</strong> : une solution développée par Apple, Google et Microsoft basée sur la cryptographie à clé publique.</li>
-                    <li><strong>Les Clés de sécurité matérielles</strong> (YubiKey, Google Titan) : qui offrent une authentification forte.</li>
-                    <li><strong>La biométrie</strong> (empreinte digitale, reconnaissance faciale).</li>
-                    <li><strong>Les applications d'authentification</strong> (Microsoft Authenticator, Google Authenticator).</li>
-                </ul>
-            </div>
-            
-            <div class="veille-section">
-                <h4>2. Avantages de l'authentification sans mot de passe</h4>
-                <ul>
-                    <li><strong>Sécurité renforcée</strong> : Réduction des risques de phishing, attaques par dictionnaire et fuite de données.</li>
-                    <li><strong>Expérience utilisateur améliorée</strong> : Plus besoin de retenir ou de gérer plusieurs mots de passe.</li>
-                    <li><strong>Interopérabilité</strong> : Compatible avec de nombreux services et appareils.</li>
-                </ul>
-            </div>
-            
-            <div class="veille-section">
-                <h4>3. Focus sur les Passkeys</h4>
-                <p>Les Passkeys sont une évolution récente qui repose sur la cryptographie asymétrique. Elles permettent de s'authentifier via un appareil de confiance (smartphone, ordinateur) sans nécessiter de mot de passe.</p>
-                <ul>
-                    <li><strong>Fonctionnement</strong> : Un couple de clés (privée et publique) est généré. La clé privée reste sur l'appareil tandis que la clé publique est stockée sur le serveur du service utilisé.</li>
-                    <li><strong>Compatibilité</strong> : Intégrées dans les écosystèmes Apple (iOS/macOS), Google (Android/Chrome), et Microsoft.</li>
-                    <li><strong>Sécurité</strong> : Immunisé contre le phishing, car aucune donnée secrète n'est transmise.</li>
-                </ul>
-            </div>
-            
-            <div class="veille-section">
-                <h4>4. Déploiement et adoption</h4>
-                <ul>
-                    <li><strong>Entreprises</strong> : De plus en plus d'organisations intègrent ces technologies pour renforcer la sécurité de leurs employés.</li>
-                    <li><strong>Normes et régulations</strong> : Soutenues par des organismes comme la FIDO Alliance et le W3C.</li>
-                    <li><strong>Limites actuelles</strong> : Nécessité d'une adoption généralisée et compatibilité avec les anciens systèmes.</li>
-                </ul>
-            </div>
-            
-            <div class="veille-section">
-                <h4>Conclusion</h4>
-                <p>L'authentification sans mot de passe représente l'avenir de la sécurité numérique. Avec des technologies comme les Passkeys et l'authentification multi-facteurs avancée, les entreprises et les utilisateurs bénéficient d'une meilleure protection contre les cybermenaces. Cependant, une adoption massive et une compatibilité accrue sont encore nécessaires pour une transition complète vers un monde sans mot de passe.</p>
-            </div>
+    <div class="veille-article">
+
+        <h3>Rapport de Veille</h3>
+        <p class="veille-date">
+            Analyse des technologies d’authentification sans mot de passe – 2025 à aujourd’hui
+        </p>
+
+        <div class="veille-section">
+            <h4>Authentification sans mot de passe (Passkeys, MFA avancé, clés cryptographiques)</h4>
+
+            <table class="veille-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Technologie / Acteur</th>
+                        <th>Information</th>
+                        <th>Impact</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025</td>
+                        <td>FIDO Alliance</td>
+                        <td>Standard FIDO2/WebAuthn basé sur cryptographie asymétrique</td>
+                        <td>Protection contre phishing et vol de mots de passe</td>
+                        <td><a href="https://fidoalliance.org/specifications-overview/" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2025</td>
+                        <td>Google</td>
+                        <td>Déploiement des Passkeys avec biométrie ou PIN local</td>
+                        <td>Connexion plus simple et adoption massive</td>
+                        <td><a href="https://developers.google.com/identity/passkeys" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2025</td>
+                        <td>Okta</td>
+                        <td>Transition vers un futur sans mot de passe</td>
+                        <td>Réduction des compromissions liées aux mots de passe</td>
+                        <td><a href="https://www.okta.com/resources/whitepaper-passwordless-future/" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2025</td>
+                        <td>CNIL</td>
+                        <td>Recommandation d’authentification multi-facteurs forte</td>
+                        <td>Encadrement légal et bonnes pratiques</td>
+                        <td><a href="https://www.cnil.fr/fr/recommandation-mfa" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2025</td>
+                        <td>ENISA</td>
+                        <td>Guide européen sur la gestion des risques et authentification forte</td>
+                        <td>Promotion des solutions basées sur clés cryptographiques</td>
+                        <td><a href="https://www.enisa.europa.eu" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026</td>
+                        <td>Yubico</td>
+                        <td>Nouvelle clé matérielle YubiKey certifiée haute sécurité</td>
+                        <td>Renforcement du MFA matériel</td>
+                        <td><a href="https://www.yubico.com" target="_blank">Lien</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
-        
-       
 
-    </section>
+    </div>
 
-
-    <script>
-        // Script pour marquer le menu actif
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.nav-btn');
-            
-            navLinks.forEach(link => {
-                const linkHref = link.getAttribute('href');
-                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+</section>
