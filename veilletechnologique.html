@@ -23,6 +23,117 @@
         </nav>
     </header>
 
+     <!-- Tableau récapitulatif -->
+        <div class="veille-article">
+            <h3>Tableau Récapitulatif des Technologies et Acteurs</h3>
+
+            <table class="veille-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Technologie / Acteur</th>
+                        <th>Information Clé</th>
+                        <th>Impact</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Avril 2025</td>
+                        <td>CNIL (France)</td>
+                        <td>Recommandation sur l'authentification multifacteur conforme au RGPD, couvrant les trois facteurs (connaissance, possession, inhérence)</td>
+                        <td>Cadre juridique clair pour les organisations françaises et européennes adoptant le MFA</td>
+                        <td><a href="https://www.cnil.fr/fr/recommandation-mfa" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2025</td>
+                        <td>FIDO Alliance</td>
+                        <td>Standard FIDO2/WebAuthn basé sur cryptographie asymétrique, développé avec W3C, Apple et Microsoft</td>
+                        <td>Protection native contre phishing, standard industriel multi-plateforme pour les passkeys</td>
+                        <td><a href="https://fidoalliance.org/specifications-overview/" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mai 2019</td>
+                        <td>Okta</td>
+                        <td>Étude sur 4 013 travailleurs (UK, FR, NL) : 10 mots de passe en moyenne, 3 oubliés/mois, 81% des violations dues aux mots de passe faibles</td>
+                        <td>Démontre le besoin urgent de solutions passwordless pour réduire stress, coûts (3,86M$/violation) et améliorer productivité</td>
+                        <td><a href="https://www.okta.com/resources/whitepaper-passwordless-future/" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mai 2023</td>
+                        <td>Google</td>
+                        <td>Déploiement massif des passkeys sur Android, Chrome et comptes Google avec biométrie ou PIN local</td>
+                        <td>Adoption massive (milliards d'utilisateurs), réduction de 50% du temps de connexion (exemple KAYAK)</td>
+                        <td><a href="https://developers.google.com/identity/passkeys" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Juin 2025</td>
+                        <td>ENISA</td>
+                        <td>Guide technique de 170 pages sur la gestion des risques cybersécurité (directive NIS2), promotion du MFA basé sur clés cryptographiques</td>
+                        <td>Oriente les politiques européennes, analyse de 4 875 incidents, alignement ISO 27001 / NIST</td>
+                        <td><a href="https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Février 2026</td>
+                        <td>Yubico - YubiKey 5 CCN</td>
+                        <td>Première clé matérielle certifiée 'ENS Alta' (plus haute certification espagnole), firmware 5.7.4, capacité 100 passkeys + 24 certificats PIV</td>
+                        <td>Conformité NIS2 et ENS, facilite achats publics en Espagne, défense contre menaces IA</td>
+                        <td><a href="https://www.yubico.com/press-releases/yubico-announces-availability-of-the-yubikey-5-ccn-series-first-hardware-security-key-to-secure-ens-alta-rating-in-spanish-national-cryptologic-center-ccns-cpstic-catalog/" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Février 2026</td>
+                        <td>Imprivata EAM</td>
+                        <td>Plateforme unifiée avec reconnaissance faciale (masques, lunettes), passkeys FIDO2, intégration Epic. 85% des IT santé jugent le passwordless critique, 7% l'ont adopté</td>
+                        <td>Réduit erreurs d'identification patient (24% de doublons), améliore sécurité et efficacité clinique</td>
+                        <td><a href="https://www.healthcareitnews.com/news/imprivata-launches-unified-face-identity-verification" target="_blank">Lien</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Février 2026</td>
+                        <td>Security Token Service (STS)</td>
+                        <td>Infrastructure critique pour SSO d'entreprise, émission/validation de tokens (SAML, JWT), support passkeys et identité fédérée</td>
+                        <td>Essentiel pour authentification passwordless à l'échelle (grandes entreprises : 200+ apps en moyenne)</td>
+                        <td><a href="https://securityboulevard.com/2026/02/what-is-a-security-token-service/" target="_blank">Lien</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+ <!-- Méthodologie -->
+        <div class="veille-article">
+            <h3>Méthodologie de Veille</h3>
+
+            <p>
+                Pour réaliser cette veille technologique sur l'authentification sans mot de passe, j'ai utilisé deux méthodes complémentaires :
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Feedly :</strong> Agrégateur de flux RSS permettant de suivre l'actualité en cybersécurité et en gestion des identités. 
+                    Il me permet de centraliser les articles récents sur les passkeys, le MFA avancé et les nouvelles solutions d'authentification.
+                </li>
+
+                <li>
+                    <strong>Newsletters spécialisées :</strong> Je reçois régulièrement par email des newsletters provenant de sites et d'acteurs du domaine 
+                    (Security Boulevard, Yubico, éditeurs de solutions de sécurité, etc.), ce qui me permet de rester informé des dernières innovations et annonces.
+                </li>
+            </ul>
+
+            <p>
+                Une capture d'écran de Feedly est présentée ci-dessous pour illustrer l'organisation de ma veille.
+            </p>
+
+            <div class="veille-image">
+                <img src="images/feedly.png" alt="Capture Feedly veille technologique" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+            </div>
+        </div>
+    
     <section id="veille">
         
         <!-- Introduction -->
@@ -266,116 +377,7 @@
             </div>
         </div>
 
-        <!-- Tableau récapitulatif -->
-        <div class="veille-article">
-            <h3>Tableau Récapitulatif des Technologies et Acteurs</h3>
-
-            <table class="veille-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Technologie / Acteur</th>
-                        <th>Information Clé</th>
-                        <th>Impact</th>
-                        <th>Source</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Avril 2025</td>
-                        <td>CNIL (France)</td>
-                        <td>Recommandation sur l'authentification multifacteur conforme au RGPD, couvrant les trois facteurs (connaissance, possession, inhérence)</td>
-                        <td>Cadre juridique clair pour les organisations françaises et européennes adoptant le MFA</td>
-                        <td><a href="https://www.cnil.fr/fr/recommandation-mfa" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>2025</td>
-                        <td>FIDO Alliance</td>
-                        <td>Standard FIDO2/WebAuthn basé sur cryptographie asymétrique, développé avec W3C, Apple et Microsoft</td>
-                        <td>Protection native contre phishing, standard industriel multi-plateforme pour les passkeys</td>
-                        <td><a href="https://fidoalliance.org/specifications-overview/" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Mai 2019</td>
-                        <td>Okta</td>
-                        <td>Étude sur 4 013 travailleurs (UK, FR, NL) : 10 mots de passe en moyenne, 3 oubliés/mois, 81% des violations dues aux mots de passe faibles</td>
-                        <td>Démontre le besoin urgent de solutions passwordless pour réduire stress, coûts (3,86M$/violation) et améliorer productivité</td>
-                        <td><a href="https://www.okta.com/resources/whitepaper-passwordless-future/" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Mai 2023</td>
-                        <td>Google</td>
-                        <td>Déploiement massif des passkeys sur Android, Chrome et comptes Google avec biométrie ou PIN local</td>
-                        <td>Adoption massive (milliards d'utilisateurs), réduction de 50% du temps de connexion (exemple KAYAK)</td>
-                        <td><a href="https://developers.google.com/identity/passkeys" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Juin 2025</td>
-                        <td>ENISA</td>
-                        <td>Guide technique de 170 pages sur la gestion des risques cybersécurité (directive NIS2), promotion du MFA basé sur clés cryptographiques</td>
-                        <td>Oriente les politiques européennes, analyse de 4 875 incidents, alignement ISO 27001 / NIST</td>
-                        <td><a href="https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Février 2026</td>
-                        <td>Yubico - YubiKey 5 CCN</td>
-                        <td>Première clé matérielle certifiée 'ENS Alta' (plus haute certification espagnole), firmware 5.7.4, capacité 100 passkeys + 24 certificats PIV</td>
-                        <td>Conformité NIS2 et ENS, facilite achats publics en Espagne, défense contre menaces IA</td>
-                        <td><a href="https://www.yubico.com/press-releases/yubico-announces-availability-of-the-yubikey-5-ccn-series-first-hardware-security-key-to-secure-ens-alta-rating-in-spanish-national-cryptologic-center-ccns-cpstic-catalog/" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Février 2026</td>
-                        <td>Imprivata EAM</td>
-                        <td>Plateforme unifiée avec reconnaissance faciale (masques, lunettes), passkeys FIDO2, intégration Epic. 85% des IT santé jugent le passwordless critique, 7% l'ont adopté</td>
-                        <td>Réduit erreurs d'identification patient (24% de doublons), améliore sécurité et efficacité clinique</td>
-                        <td><a href="https://www.healthcareitnews.com/news/imprivata-launches-unified-face-identity-verification" target="_blank">Lien</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Février 2026</td>
-                        <td>Security Token Service (STS)</td>
-                        <td>Infrastructure critique pour SSO d'entreprise, émission/validation de tokens (SAML, JWT), support passkeys et identité fédérée</td>
-                        <td>Essentiel pour authentification passwordless à l'échelle (grandes entreprises : 200+ apps en moyenne)</td>
-                        <td><a href="https://securityboulevard.com/2026/02/what-is-a-security-token-service/" target="_blank">Lien</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Méthodologie -->
-        <div class="veille-article">
-            <h3>Méthodologie de Veille</h3>
-
-            <p>
-                Pour réaliser cette veille technologique sur l'authentification sans mot de passe, j'ai utilisé deux méthodes complémentaires :
-            </p>
-
-            <ul>
-                <li>
-                    <strong>Feedly :</strong> Agrégateur de flux RSS permettant de suivre l'actualité en cybersécurité et en gestion des identités. 
-                    Il me permet de centraliser les articles récents sur les passkeys, le MFA avancé et les nouvelles solutions d'authentification.
-                </li>
-
-                <li>
-                    <strong>Newsletters spécialisées :</strong> Je reçois régulièrement par email des newsletters provenant de sites et d'acteurs du domaine 
-                    (Security Boulevard, Yubico, éditeurs de solutions de sécurité, etc.), ce qui me permet de rester informé des dernières innovations et annonces.
-                </li>
-            </ul>
-
-            <p>
-                Une capture d'écran de Feedly est présentée ci-dessous pour illustrer l'organisation de ma veille.
-            </p>
-
-            <div class="veille-image">
-                <img src="images/feedly.png" alt="Capture Feedly veille technologique" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
-            </div>
-        </div>
+       
 
     </section>
 
@@ -392,3 +394,4 @@
 
 </body>
 </html>
+
