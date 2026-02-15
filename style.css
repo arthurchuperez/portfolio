@@ -585,3 +585,42 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+/* Tableau veille (style rapport comme ton ami) */
+.veille-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+.veille-table thead {
+    background: linear-gradient(90deg, #ff8c00, #8a2be2);
+    color: white;
+}
+
+.veille-table th,
+.veille-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+.veille-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.veille-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.veille-table a {
+    color: #8a2be2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.veille-table a:hover {
+    text-decoration: underline;
+}
+
